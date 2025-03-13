@@ -1,0 +1,42 @@
+PREFIX => ctrl + b
+
+start tmux session  ~$ tmux 
+start new session with name ~$ tmux new -s <session_name>
+attach to session ~$ tmux a 
+attach to named sesssion ~$ tmux a -t <session_name>
+list sessions ~$ tmux ls 
+kill session ~$ tmux kill-session -t <session_name>
+
+WINDOWS 
+
+c  create window 
+w  list windows
+n  next window
+p  previous window
+f  find window 
+,  name window
+&  kill window
+
+PANES 
+
+%  vertical split
+"  horizontal split
+o  swap panes
+q  show pane numbers
+x  kill pane
+{  Move the current pane left
+}  Move the current pane right
+z  toggle pane zoom
+[  enable scroll
+
+PREFIX : resize-pane -D 20 (Resizes the current pane down by 20 cells)
+PREFIX : resize-pane -U 20 (Resizes the current pane upward by 20 cells)
+PREFIX : resize-pane -L 20 (Resizes the current pane left by 20 cells)
+PREFIX : resize-pane -R 20 (Resizes the current pane right by 20 cells)
+
+MISC 
+
+d  detach
+t  big clock
+?  list shortcuts
+:  prompt

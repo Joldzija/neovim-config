@@ -26,6 +26,8 @@
     <leader>gw - git add
     <leader>gr - git reset
     <leader>gh - help for git commands
+    <leader>gp - diffput 
+    <leader>gg - diffget
     -                       stage/unstage, can be used with visual mode to select multiple and stage
     =                       shows changes on selected file
     :Gvdiff <branch_name>   PR preview

@@ -70,3 +70,4 @@ Ctrl+w l                                Navigate to the right pane
 Ctrl+w h                                Navigate to the left pane
 Ctrl+w j                                Navigate to the bottom pane
 Ctrl+w k                                Navigate to the upper pane
+Ctrl+w r                                Swap left and right panes

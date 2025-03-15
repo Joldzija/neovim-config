@@ -4,5 +4,5 @@
 
 NOTE: to enable copying in and out of system clipboard
 ```
-sudo apt install xclip xsel
+$ sudo apt install xclip xsel
 ```

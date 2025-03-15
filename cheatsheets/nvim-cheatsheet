@@ -1,0 +1,52 @@
+--- COMMENTING ---
+
+    gcc - Toggles the current line using linewise comment
+    gbc - Toggles the current line using blockwise comment
+    [count]gcc - Toggles the number of line given as a prefix-count using linewise
+    [count]gbc - Toggles the number of line given as a prefix-count using blockwise
+    gc[count]{motion} - (Op-pending) Toggles the region using linewise comment
+    gb[count]{motion} - (Op-pending) Toggles the region using blockwise comment
+
+--- HARPOON --- 
+
+    <leader>a - add current file to harpoon 
+    <leader>e - open harpoon menu 
+    <leader>ho  - navigate to first file in harpoon 
+    <leader>hp  - navigate to second file in harpoon 
+    <leader>h[  - navigate to third file in harpoon 
+    <leader>h]  - navigate to fourth file in harpoon 
+    CTRL + n  - navigate to next file in harpoon 
+    CTRL + m  - navigate to previous file in harpoon 
+
+--- fuGITive --- 
+
+    <leader>gs - git status
+    <leader>gd - shows file changes of file currently opened
+    <leader>gl - git log
+    <leader>gw - git add
+    <leader>gr - git reset
+    <leader>gc - git commit
+    <leader>gpl - git pull 
+    <leader>gps - git push
+    -                       stage/unstage, can be used with visual mode to select multiple and stage
+    =                       shows changes on selected file
+    :Gvdiff <branch_name>   PR preview
+    :Git blame              shows commiters and the time
+    :Git help               help for git commands
+
+--- REMAPS ---
+
+    <leader>fv - files view
+    <leader>f1 - open vim cheatsheet 
+    <leader>f2 - open tmux cheatsheet
+    <leader>f3 - open nvim cheatsheet
+    CTRL + k - move line up
+    CTRL + j - move line down
+    <leader>u - toggle undo tree
+    <leader>fc - format code  
+
+--- TELESCOPE --- 
+
+    <leader>ff - find files
+    <leader>fg - live grep
+    <leader>fh - help tags

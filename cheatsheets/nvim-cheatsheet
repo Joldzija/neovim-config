@@ -49,3 +49,7 @@
     <leader>ff - find files
     <leader>fg - live grep
     <leader>fh - help tags
+    <leader>fc - commits 
+    <leader>fb - branches
+    CTRL + u   - scroll up on preview window
+    CTRL + d   - scroll down on preview window

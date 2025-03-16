@@ -6,3 +6,5 @@ NOTE: to enable copying in and out of system clipboard
 ```
 $ sudo apt install xclip xsel
 ```
+
+WARNING: to use formatters you need to install them!

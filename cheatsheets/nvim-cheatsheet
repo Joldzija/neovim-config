@@ -32,6 +32,8 @@
     =                       shows changes on selected file
     :Gvdiff <branch_name>   PR preview
     :Git blame              shows commiters and the time
+    ]c - jump to next change in git diff 
+    [c - jump to the previous change in git diff
 
 --- REMAPS ---
 

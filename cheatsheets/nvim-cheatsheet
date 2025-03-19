@@ -55,3 +55,9 @@
     <leader>fb - branches
     CTRL + u   - scroll up on preview window
     CTRL + d   - scroll down on preview window
+
+--- NVIM TREE --- 
+
+    <leader>ft - open file tree 
+    a - create dir or file 
+    e - rename

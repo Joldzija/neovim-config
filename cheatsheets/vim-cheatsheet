@@ -64,6 +64,7 @@ n                                       Repeat pattern in same direction
 N                                       Repeat pattern in oposite direction
 .                                       Repeat cmd
 :%s/old/new/gc                          Replace with confirmation
+:%s/\<old\>/new/g                       Rename variable
 Ctrl+w v                                Split screen vertically
 Ctrl+w s                                Split screen horizontaly
 Ctrl+w l                                Navigate to the right pane

@@ -28,7 +28,7 @@ x  kill pane
 }  Move the current pane right
 z  toggle pane zoom
 [  enable scroll
-s  synchronize panes
+s  synchronize panes (add this 'bind s setw synchronize-panes' to the .tmux.conf file and then do ctrl+b :source-file ~/.tmux.conf) 
 
 ALT + arrow_key (Resizes the current pane in arrow_key direction)
 

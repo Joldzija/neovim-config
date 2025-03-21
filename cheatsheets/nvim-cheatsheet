@@ -26,15 +26,17 @@
     <leader>gw - git add
     <leader>gr - git reset
     <leader>gh - help for git commands
-    <leader>gp - diffput 
+    <leader>gpt - diffput 
     <leader>gg - diffget
+    <leader>gpl - git pull 
+    <leader>gc - git commit
     -                       stage/unstage, can be used with visual mode to select multiple and stage
     =                       shows changes on selected file
     :Gvdiff <branch_name>   PR preview
     :Git blame              shows commiters and the time
     ]c - jump to next change in git diff 
     [c - jump to the previous change in git diff
-
+    
 --- REMAPS ---
 
     <leader>fv - files view
@@ -45,6 +47,8 @@
     CTRL + j - move line down
     <leader>u - toggle undo tree
     <leader>fc - format code  
+    <leader>t - open terminal
+    <leader>q - :q
 
 --- TELESCOPE --- 
 

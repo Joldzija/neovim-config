@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>ft", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set(
 	"n",
 	"<leader>f1",
@@ -17,6 +18,12 @@ vim.keymap.set(
 	"n",
 	"<leader>f3",
 	":vsplit ~/.config/nvim/cheatsheets/nvim-cheatsheet<CR>",
+	{ noremap = true, silent = true }
+)
+vim.keymap.set(
+	"n",
+	"<leader>t",
+	":split | :wincmd j | :ter<CR>",
 	{ noremap = true, silent = true }
 )
 vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")

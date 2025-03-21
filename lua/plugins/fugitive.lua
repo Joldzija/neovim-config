@@ -11,5 +11,6 @@ return {
 		vim.keymap.set("n", "<leader>gg", ":diffget<CR>")
 		vim.keymap.set("n", "<leader>gc", ":Git commit -m \"\"")
 		vim.keymap.set("n", "<leader>gpl", ":Git pull<CR>")
+		vim.keymap.set("n", "<leader>gps", ":Git push")
 	end,
 }

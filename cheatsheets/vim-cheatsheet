@@ -1,34 +1,39 @@
-:ter				        Open terminal 
-<number>h|j|k|l 		        Move <number> of times in direction
-H, M, L 	                        Jump to the top, middle or bottom of the screen 
-w 		                        Jump to the beggining of next word 
-e 		                        Jump to the end of next word
-b		                        Jump backwards to the beggining of previous word
-$		                        Jump to the end of the line 
-0		                        Jump to the beggining of the line
-% 		                        Jump to a closing bracket 
-<number>gg	                        Go to line
-gd 		                        Go to local declaration of the variable
-gD 		                        Go to global declaration of the variable
-f<char>		                        Jump to the next occurance of <char>
-F<char>		                        Jump to the previous occurance of <char>
-Ctrl+e		                        Scroll down by one line 
-Ctrl+y		                        Scroll up by one line
-Ctrl+d   	                        Scroll down 1/2 of the page
-Ctrl+u		                        Scroll up 1/2 of the page
-r		                        Replace character under cursor
-R		                        Replace untill escape 
-J		                        Join current line with line below with space in-between
-~ 		                        Change case
-u		                        Change to lowercase
-U		                        Change to uppercase
-cc		                        Replace whole line
-C		                        Replace untill the end of line
-ciw		                        Replace word
-cw		                        Replace from cursor untill the end of the word
-i		                        Insert before 
-a		                        Insert after / append 
-I		                        Insert at the begging of the line
+"<a-z><y_cmd|d_cmd>                     copy/cut into named register
+"<a-z>p                                 paste from named register
+q<a-z>                                  record macro in named register press q again to finish recording
+@<a-z>                                  run macro from named register
+:h registers                            registers tutorial
+:ter				                    Open terminal 
+<number>h|j|k|l 		                Move <number> of times in direction
+H, M, L 	                            Jump to the top, middle or bottom of the screen 
+w 		                                Jump to the beggining of next word 
+e 		                                Jump to the end of next word
+b		                                Jump backwards to the beggining of previous word
+$		                                Jump to the end of the line 
+0		                                Jump to the beggining of the line
+% 		                                Jump to a closing bracket 
+<number>gg	                            Go to line
+gd 		                                Go to local declaration of the variable
+gD 		                                Go to global declaration of the variable
+f<char>		                            Jump to the next occurance of <char>
+F<char>		                            Jump to the previous occurance of <char>
+Ctrl+e		                            Scroll down by one line 
+Ctrl+y		                            Scroll up by one line
+Ctrl+d   	                            Scroll down 1/2 of the page
+Ctrl+u		                            Scroll up 1/2 of the page
+r		                                Replace character under cursor
+R		                                Replace untill escape 
+J		                                Join current line with line below with space in-between
+~ 		                                Change case
+u		                                Change to lowercase
+U		                                Change to uppercase
+cc		                                Replace whole line
+C		                                Replace untill the end of line
+ciw		                                Replace word
+cw		                                Replace from cursor untill the end of the word
+i		                                Insert before 
+a		                                Insert after / append 
+I		                                Insert at the begging of the line
 A                                       Insert at the end of the line 
 u                                       Undo
 Ctrl+r                                  Redo

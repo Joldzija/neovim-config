@@ -46,7 +46,7 @@
     CTRL + k - move line up
     CTRL + j - move line down
     <leader>u - toggle undo tree
-    <leader>fc - format code  
+    <leader>cf - format code  
     <leader>t - open terminal
     <leader>q - :q
 

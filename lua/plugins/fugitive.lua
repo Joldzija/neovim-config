@@ -10,6 +10,8 @@ return {
 		vim.keymap.set("n", "<leader>gpt", ":diffput<CR>")
 		vim.keymap.set("n", "<leader>gg", ":diffget<CR>")
 		vim.keymap.set("n", "<leader>gc", ":Git commit -m \"\"")
+		vim.keymap.set("n", "<leader>gb", ":Git checkout -b \"\"")
+		vim.keymap.set("n", "<leader>gm", ":Git checkout master | Git pull<CR>")
 		vim.keymap.set("n", "<leader>gpl", ":Git pull<CR>")
 		vim.keymap.set("n", "<leader>gps", ":Git push")
 	end,

@@ -31,6 +31,7 @@ z  toggle pane zoom
 s  synchronize panes (add this 'bind s setw synchronize-panes' to the .tmux.conf file and then do ctrl+b :source-file ~/.tmux.conf) 
 
 ALT + arrow_key (Resizes the current pane in arrow_key direction)
+prefix + arrow_key      move to the pane in the direction
 
 MISC 
 

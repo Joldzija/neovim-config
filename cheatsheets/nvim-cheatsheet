@@ -47,8 +47,11 @@
     CTRL + j - move line down
     <leader>u - toggle undo tree
     <leader>cf - format code  
-    <leader>t - open terminal
+    <leader>ter - open terminal
     <leader>q - :q
+    <leader>to - open new tab
+    <leader>tc - close tab
+    <leader>tn - next tab
 
 --- TELESCOPE --- 
 

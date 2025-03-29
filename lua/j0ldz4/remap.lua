@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>ft", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
+vim.keymap.set("n", "<leader>tn", ":tabnext<CR>")
 vim.keymap.set(
 	"n",
 	"<leader>f1",
@@ -22,7 +25,7 @@ vim.keymap.set(
 )
 vim.keymap.set(
 	"n",
-	"<leader>t",
+	"<leader>ter",
 	":split | :wincmd j | :ter<CR>",
 	{ noremap = true, silent = true }
 )

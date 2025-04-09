@@ -68,3 +68,4 @@
     <leader>ft - open file tree 
     a - create dir or file 
     e - rename
+    gy - copy absolute path

@@ -5,14 +5,27 @@ return {
 	dependencies = {},
 	config = function()
 		require("nvim-tree").setup({
+            view = {
+                width = 40,
+            },
 			renderer = {
 				icons = {
+                   web_devicons = {
+                        file = {
+                          enable = true,
+                          color = true,
+                        },
+                        folder = {
+                          enable = false,
+                          color = true,
+                        },
+                    },
 					show = {
 						folder = true,
 						file = true,
 						folder_arrow = false,
 					},
-					glyphs = {
+                    glyphs = {
 						folder = {
 							default = "🗂️",
 							open = "📂",
@@ -20,9 +33,8 @@ return {
 							empty_open = "📂",
 							symlink = "🔗",
 							symlink_open = "🔗",
-						},
-						default = "📄",
-					},
+						}
+                    },
 				},
 			},
 			actions = {

@@ -11,10 +11,10 @@
 
     <leader>a - add current file to harpoon 
     <leader>e - open harpoon menu 
-    <leader>ho  - navigate to first file in harpoon 
-    <leader>hp  - navigate to second file in harpoon 
-    <leader>h[  - navigate to third file in harpoon 
-    <leader>h]  - navigate to fourth file in harpoon 
+    <leader>h1  - navigate to first file in harpoon 
+    <leader>h2  - navigate to second file in harpoon 
+    <leader>h3  - navigate to third file in harpoon 
+    <leader>h4  - navigate to fourth file in harpoon 
     CTRL + n  - navigate to next file in harpoon 
     CTRL + m  - navigate to previous file in harpoon 
 
@@ -43,8 +43,8 @@
     <leader>f1 - open vim cheatsheet 
     <leader>f2 - open tmux cheatsheet
     <leader>f3 - open nvim cheatsheet
-    CTRL + k - move line up
-    CTRL + j - move line down
+    <C-k> - move line up
+    <C-j> - move line down
     <leader>u - toggle undo tree
     <leader>cf - format code  
     <leader>ter - open terminal
@@ -52,6 +52,10 @@
     <leader>to - open new tab
     <leader>tc - close tab
     <leader>tn - next tab
+    <C-z>h - Resize
+    <C-z>l - window
+    <C-z>j - in  
+    <C-z>k - direction 
 
 --- TELESCOPE --- 
 

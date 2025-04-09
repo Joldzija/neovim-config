@@ -32,3 +32,8 @@ vim.keymap.set(
 )
 vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
 vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
+vim.keymap.set('n', '<C-z>h', ':vertical resize +4<CR>', { noremap = true, silent = true, desc = 'Increase window width' })
+vim.keymap.set('n', '<C-z>l', ':vertical resize -4<CR>', { noremap = true, silent = true, desc = 'Decrease window width' })
+vim.keymap.set('n', '<C-z>k', ':resize -4<CR>', { noremap = true, silent = true, desc = 'Decrease window height' })
+vim.keymap.set('n', '<C-z>j', ':resize +4<CR>', { noremap = true, silent = true, desc = 'Increase window height' })
+

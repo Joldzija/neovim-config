@@ -52,10 +52,10 @@
     <leader>to - open new tab
     <leader>tc - close tab
     <leader>tn - next tab
-    <C-z>h - Resize
-    <C-z>l - window
-    <C-z>j - in  
-    <C-z>k - direction 
+    <leader>wh - Resize
+    <leader>wl - window
+    <leader>wj - in  
+    <leader>wk - direction 
 
 --- TELESCOPE --- 
 
@@ -73,3 +73,5 @@
     a - create dir or file 
     e - rename
     gy - copy absolute path
+    c - copy file or dir
+    p - paste file or dir

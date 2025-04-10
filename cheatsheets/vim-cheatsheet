@@ -7,7 +7,9 @@ q<a-z>                                  record macro in named register press q a
 <number>h|j|k|l 		                Move <number> of times in direction
 H, M, L 	                            Jump to the top, middle or bottom of the screen 
 w 		                                Jump to the beggining of next word 
+W                                       Jump to the beggining of the next word including punctuation
 e 		                                Jump to the end of next word
+E                                       Jump to the end of next word including punctuation
 b		                                Jump backwards to the beggining of previous word
 $		                                Jump to the end of the line 
 0		                                Jump to the beggining of the line

@@ -11,6 +11,7 @@ W                                       Jump to the beggining of the next word i
 e 		                                Jump to the end of next word
 E                                       Jump to the end of next word including punctuation
 b		                                Jump backwards to the beggining of previous word
+B                                       Jump backwards to the beggining of previous word including punctuation
 $		                                Jump to the end of the line 
 0		                                Jump to the beggining of the line
 % 		                                Jump to a closing bracket 
@@ -25,14 +26,10 @@ Ctrl+d   	                            Scroll down 1/2 of the page
 Ctrl+u		                            Scroll up 1/2 of the page
 r		                                Replace character under cursor
 R		                                Replace untill escape 
-J		                                Join current line with line below with space in-between
 ~ 		                                Change case
 u		                                Change to lowercase
 U		                                Change to uppercase
-cc		                                Replace whole line
-C		                                Replace untill the end of line
 ciw		                                Replace word
-cw		                                Replace from cursor untill the end of the word
 i		                                Insert before 
 a		                                Insert after / append 
 I		                                Insert at the begging of the line
@@ -44,26 +41,21 @@ O                                       Open new line above and insert
 >>                                      Indent 
 <<                                      De-Indent
 Shift+v                                 Line visual mode
-aw                                      Select word (including spaces after) in visual mode
-ab                                      Select outer block inside () in visual mode
-ib                                      Select inner block inside () in visual mode 
 yy                                      Copy line in normal mode
 <number>yy                              Copy <number> of lines in normal mode
 yiw                                     Copy word under cursor
-yw                                      Copy from cursor untill the end of the word
 y                                       Copy in visual mode 
 Y                                       Copy untill the end of the line
 pp                                      Paste line in normal mode 
 <number>pp                              Paste <number> of lines in normal mode
 p                                       Paste in visual mode 
+P                                       Paste in visual mode before current char
 dd                                      Delete line in normal mode
 <number>dd                              Delete <number> of lines in normal mode
 diw                                     Delete the word under cursor
-dw                                      Delete from the cursor untill the end of the word
 d                                       Delete in visual mode
 D                                       Delete untill the end of the line
-:.,$d                                   Delete from current line untill the end of the file
-:g/{pattern}/d                          Delete all lines containing g! for not containing pattern
+dG                                      Delete from current line untill the end of the file
 x                                       delete/cut a character
 /pattern                                Search 
 ?pattern                                Search backward
@@ -79,3 +71,25 @@ Ctrl+w h                                Navigate to the left pane
 Ctrl+w j                                Navigate to the bottom pane
 Ctrl+w k                                Navigate to the upper pane
 Ctrl+w r                                Swap left and right panes
+(*) aw                                      Select word (including spaces after) in visual mode
+(*) ab                                      Select outer block inside () in visual mode
+(*) ib                                      Select inner block inside () in visual mode 
+(*) dw                                      Delete from the cursor untill the end of the word
+(*) yw                                      Copy from cursor untill the end of the word
+(*) cc		                                Replace whole line
+(*) C		                                Replace untill the end of line
+(*) cw		                                Replace from cursor untill the end of the word
+(*) J		                                Join current line with line below with space in-between
+(*) :g/{pattern}/d                          Delete all lines containing g! for not containing pattern
+(*) t<char>                                 Go to next occurance of a char but char before
+(*) T<char>                                 Go to previous occurance of a char but char before
+(*) zt                                      Position cursor at the top 
+(*) zz                                      Position cursor at the middle 
+(*) #                                       Search for the word under a cursor
+(*) d<number>w                              delete number of words
+(*) c<number>w                              change number of words
+(*) daw                                     delete current word but with space after
+(*) gUw                                     uppercase whole word (if u are on beggining of word)
+(*) guw                                     uppercase whole word (if u are on beggining of word)
+(*) guu                                     lowercase whole line
+(*) gUU                                     uppercase whole line

@@ -93,3 +93,4 @@ Ctrl+w r                                Swap left and right panes
 (*) guw                                     uppercase whole word (if u are on beggining of word)
 (*) guu                                     lowercase whole line
 (*) gUU                                     uppercase whole line
+(*) CTRL+v j|k I|A                          Insert before or after first char of multiline block 

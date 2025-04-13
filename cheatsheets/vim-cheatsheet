@@ -1,10 +1,6 @@
-"<a-z><y_cmd|d_cmd>                     copy/cut into named register
-"<a-z>p                                 paste from named register
-q<a-z>                                  record macro in named register press q again to finish recording
-@<a-z>                                  run macro from named register
-:h registers                            registers tutorial
-:ter				                    Open terminal 
-<number>h|j|k|l 		                Move <number> of times in direction
+--- MOVEMENT ---
+
+h|j|k|l 		                        Move in direction
 H, M, L 	                            Jump to the top, middle or bottom of the screen 
 w 		                                Jump to the beggining of next word 
 W                                       Jump to the beggining of the next word including punctuation
@@ -16,54 +12,81 @@ $		                                Jump to the end of the line
 0		                                Jump to the beggining of the line
 % 		                                Jump to a closing bracket 
 <number>gg	                            Go to line
-gd 		                                Go to local declaration of the variable
-gD 		                                Go to global declaration of the variable
+gg	                                    Go to first line
 f<char>		                            Jump to the next occurance of <char>
 F<char>		                            Jump to the previous occurance of <char>
+t<char>                                 Go to next occurance of a char but char before
+T<char>                                 Go to previous occurance of a char but char before
+zt                                      Position cursor at the top 
+zz                                      Position cursor at the middle 
+
+--- SCROLLING ---
+
 Ctrl+e		                            Scroll down by one line 
 Ctrl+y		                            Scroll up by one line
 Ctrl+d   	                            Scroll down 1/2 of the page
 Ctrl+u		                            Scroll up 1/2 of the page
-r		                                Replace character under cursor
-R		                                Replace untill escape 
-~ 		                                Change case
-u		                                Change to lowercase
-U		                                Change to uppercase
-ciw		                                Replace word
+
+--- INSERTING --- 
+
 i		                                Insert before 
 a		                                Insert after / append 
 I		                                Insert at the begging of the line
 A                                       Insert at the end of the line 
-u                                       Undo
-Ctrl+r                                  Redo
 o                                       Open new line below and insert 
 O                                       Open new line above and insert
->>                                      Indent 
-<<                                      De-Indent
-Shift+v                                 Line visual mode
-yy                                      Copy line in normal mode
-<number>yy                              Copy <number> of lines in normal mode
-yiw                                     Copy word under cursor
-y                                       Copy in visual mode 
-Y                                       Copy untill the end of the line
-pp                                      Paste line in normal mode 
-<number>pp                              Paste <number> of lines in normal mode
-p                                       Paste in visual mode 
-P                                       Paste in visual mode before current char
-dd                                      Delete line in normal mode
-<number>dd                              Delete <number> of lines in normal mode
-diw                                     Delete the word under cursor
-d                                       Delete in visual mode
-D                                       Delete untill the end of the line
-dG                                      Delete from current line untill the end of the file
+
+--- SELECTION --- 
+
+a                                       Outer selection
+i                                       Inner selection
+aw                                      Select word (including spaces after) in visual mode
+iw                                      Select word in visual mode
+ab                                      Select outer block inside () in visual mode
+ib                                      Select inner block inside () in visual mode 
+
+--- YANKING, PASTING, DELETING ---
+
+y                                       Copy
+yy                                      Copy line
+Y                                       Copy until the end of the line
+p                                       Paste
+pp                                      Paste line
+P                                       Paste before current char
+d                                       Delete
+dd                                      Delete line
+D                                       Delete until the end of the line
+dG                                      Delete utill the end of the file
 x                                       delete/cut a character
+"<a-z><y_cmd|d_cmd>                     copy/cut into named register
+"<a-z>p                                 paste from named register
+
+--- FINDING AND REPLACING ---
+
+r		                                Replace character under cursor
+R		                                Replace until escape 
+c                                       Replace
+cc		                                Replace whole line
+C		                                Replace until the end of line
 /pattern                                Search 
 ?pattern                                Search backward
 n                                       Repeat pattern in same direction 
 N                                       Repeat pattern in oposite direction
-.                                       Repeat cmd
 :%s/old/new/gc                          Replace with confirmation
 :%s/\<old\>/new/g                       Rename variable
+#                                       Search for the word under a cursor
+:g/{pattern}/d                          Delete all lines containing g! for not containing pattern
+
+--- CASING --- 
+
+~ 		                                change case
+gU<movement>                            uppercase in movement
+gu<movement>                            lowercase in movement
+gUU                                     uppercase whole line
+guu                                     lowercase whole line
+
+--- PANES --- 
+
 Ctrl+w v                                Split screen vertically
 Ctrl+w s                                Split screen horizontaly
 Ctrl+w l                                Navigate to the right pane
@@ -71,26 +94,19 @@ Ctrl+w h                                Navigate to the left pane
 Ctrl+w j                                Navigate to the bottom pane
 Ctrl+w k                                Navigate to the upper pane
 Ctrl+w r                                Swap left and right panes
-(*) aw                                      Select word (including spaces after) in visual mode
-(*) ab                                      Select outer block inside () in visual mode
-(*) ib                                      Select inner block inside () in visual mode 
-(*) dw                                      Delete from the cursor untill the end of the word
-(*) yw                                      Copy from cursor untill the end of the word
-(*) cc		                                Replace whole line
-(*) C		                                Replace untill the end of line
-(*) cw		                                Replace from cursor untill the end of the word
-(*) J		                                Join current line with line below with space in-between
-(*) :g/{pattern}/d                          Delete all lines containing g! for not containing pattern
-(*) t<char>                                 Go to next occurance of a char but char before
-(*) T<char>                                 Go to previous occurance of a char but char before
-(*) zt                                      Position cursor at the top 
-(*) zz                                      Position cursor at the middle 
-(*) #                                       Search for the word under a cursor
-(*) d<number>w                              delete number of words
-(*) c<number>w                              change number of words
-(*) daw                                     delete current word but with space after
-(*) gUw                                     uppercase whole word (if u are on beggining of word)
-(*) guw                                     uppercase whole word (if u are on beggining of word)
-(*) guu                                     lowercase whole line
-(*) gUU                                     uppercase whole line
-(*) CTRL+v j|k I|A                          Insert before or after first char of multiline block 
+
+--- OTHER ---
+
+q<a-z>                                  record macro in named register press q again to finish recording
+@<a-z>                                  run macro from named register
+:h registers                            registers tutorial
+gd 		                                Go to local declaration of the variable
+gD 		                                Go to global declaration of the variable
+u                                       Undo
+Ctrl+r                                  Redo
+>>                                      Indent 
+<<                                      De-Indent
+Shift+v                                 Line visual mode
+.                                       Repeat cmd
+J		                                Join current line with line below with space in-between
+CTRL+v j|k I|A                          Insert before or after first char of multiline block 

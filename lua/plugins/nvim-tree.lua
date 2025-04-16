@@ -7,8 +7,10 @@ return {
 		require("nvim-tree").setup({
             view = {
                 width = 40,
+                relativenumber = true,
             },
 			renderer = {
+                full_name = true,
 				icons = {
                    web_devicons = {
                         file = {

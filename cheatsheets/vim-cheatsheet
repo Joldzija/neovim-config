@@ -44,6 +44,7 @@ aw                                      Select word (including spaces after) in 
 iw                                      Select word in visual mode
 ab                                      Select outer block inside () in visual mode
 ib                                      Select inner block inside () in visual mode 
+it                                      Select inside tag
 
 --- YANKING, PASTING, DELETING ---
 

@@ -7,6 +7,8 @@ attach to named sesssion ~$ tmux a -t <session_name>
 list sessions ~$ tmux ls 
 kill session ~$ tmux kill-session -t <session_name>
 
+k   kill session
+
 WINDOWS 
 
 c  create window 

@@ -10,7 +10,7 @@ To use formatters you need to install them!
 ```
 pip install black
 ```
-For best experience download Nerd Font or use the one provided in the repo
+Nerd font for tree icons
 ```
 sudo cp /path/to/your/font.ttf /usr/share/fonts/truetype/
 sudo fc-cache -f -v

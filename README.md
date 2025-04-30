@@ -2,6 +2,7 @@
 
 - Personalized Neovim configuration for an optimized and efficient coding experience.
 
+For shared clipboard
 ```
 sudo apt install xclip xsel ripgrep
 ```
